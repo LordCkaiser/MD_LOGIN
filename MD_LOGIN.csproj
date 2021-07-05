@@ -46,6 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CAJA\APERTURA_DE_CAJA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAJA\APERTURA_DE_CAJA.designer.cs">
+      <DependentUpon>APERTURA_DE_CAJA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONEXION\Desencryptacion.cs" />
+    <Compile Include="CONEXION\Encryptacion.cs" />
+    <Compile Include="CONEXION\Tamaño_automatio_de_datatable.cs" />
+    <Compile Include="MENU_PRICIPAL\MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU_PRICIPAL\MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="MODULOS\Administrador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +73,7 @@
     <Compile Include="MODULOS\ALMACEN.Designer.cs">
       <DependentUpon>ALMACEN.cs</DependentUpon>
     </Compile>
+    <Compile Include="CONEXION\CONEXIONMAESTRA.cs" />
     <Compile Include="MODULOS\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,8 +86,20 @@
     <Compile Include="MODULOS\GERENCIA.Designer.cs">
       <DependentUpon>GERENCIA.cs</DependentUpon>
     </Compile>
+    <Compile Include="MODULOS\Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\Usuarios.designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CAJA\APERTURA_DE_CAJA.resx">
+      <DependentUpon>APERTURA_DE_CAJA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU_PRICIPAL\MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MODULOS\Administrador.resx">
       <DependentUpon>Administrador.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +111,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MODULOS\GERENCIA.resx">
       <DependentUpon>GERENCIA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\Usuarios.aa-ER.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -106,9 +140,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CONEXION\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
