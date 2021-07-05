@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CAJA\APERTURA_DE_CAJA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAJA\APERTURA_DE_CAJA.designer.cs">
+      <DependentUpon>APERTURA_DE_CAJA.cs</DependentUpon>
+    </Compile>
     <Compile Include="CONEXION\Tamaño_automatio_de_datatable.cs" />
     <Compile Include="MODULOS\Administrador.cs">
       <SubType>Form</SubType>
@@ -80,6 +86,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CAJA\APERTURA_DE_CAJA.resx">
+      <DependentUpon>APERTURA_DE_CAJA.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MODULOS\Administrador.resx">
       <DependentUpon>Administrador.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,7 +129,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="MENU_PRICIPAL\" />
+  </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
