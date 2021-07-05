@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CONEXION\Tamaño_automatio_de_datatable.cs" />
     <Compile Include="MODULOS\Administrador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +72,12 @@
     <Compile Include="MODULOS\GERENCIA.Designer.cs">
       <DependentUpon>GERENCIA.cs</DependentUpon>
     </Compile>
+    <Compile Include="MODULOS\Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\Usuarios.designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MODULOS\Administrador.resx">
@@ -84,6 +91,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MODULOS\GERENCIA.resx">
       <DependentUpon>GERENCIA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\Usuarios.aa-ER.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
