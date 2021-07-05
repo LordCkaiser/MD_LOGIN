@@ -102,6 +102,21 @@ namespace MD_LOGIN.MENU_PRICIPAL
             this.lblIVA = new System.Windows.Forms.Label();
             this.lblDescuento = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
+            this.btnVerGastos = new System.Windows.Forms.Button();
+            this.panelTotal = new System.Windows.Forms.Panel();
+            this.btnDescuento = new System.Windows.Forms.Button();
+            this.btnRestaurar = new System.Windows.Forms.Button();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblTotalActual = new System.Windows.Forms.Label();
+            this.lblNuevo = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.btnVentasEspera = new System.Windows.Forms.Button();
+            this.btnPonerEspera = new System.Windows.Forms.Button();
+            this.btnEliminarVenta = new System.Windows.Forms.Button();
+            this.btnVerVentas = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -143,6 +158,10 @@ namespace MD_LOGIN.MENU_PRICIPAL
             this.panel23.SuspendLayout();
             this.panel24.SuspendLayout();
             this.panel25.SuspendLayout();
+            this.panelTotal.SuspendLayout();
+            this.panel26.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            this.panel27.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -743,6 +762,7 @@ namespace MD_LOGIN.MENU_PRICIPAL
             // panel23
             // 
             this.panel23.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel23.Controls.Add(this.panel27);
             this.panel23.Controls.Add(this.panel25);
             this.panel23.Controls.Add(this.panel24);
             this.panel23.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -798,6 +818,7 @@ namespace MD_LOGIN.MENU_PRICIPAL
             // 
             // panel24
             // 
+            this.panel24.Controls.Add(this.btnVerGastos);
             this.panel24.Controls.Add(this.btnIngVarios);
             this.panel24.Controls.Add(this.btnProdServ);
             this.panel24.Controls.Add(this.btnInsVarios);
@@ -805,18 +826,21 @@ namespace MD_LOGIN.MENU_PRICIPAL
             this.panel24.Controls.Add(this.btnMayoreo);
             this.panel24.Location = new System.Drawing.Point(5, 3);
             this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(669, 37);
+            this.panel24.Size = new System.Drawing.Size(878, 37);
             this.panel24.TabIndex = 5;
             // 
             // panel25
             // 
-            this.panel25.Controls.Add(this.lblTotal);
+            this.panel25.Controls.Add(this.panel26);
+            this.panel25.Controls.Add(this.btnRestaurar);
+            this.panel25.Controls.Add(this.btnDescuento);
+            this.panel25.Controls.Add(this.panelTotal);
             this.panel25.Controls.Add(this.lblDescuento);
             this.panel25.Controls.Add(this.lblIVA);
             this.panel25.Controls.Add(this.lblSubtotal);
             this.panel25.Location = new System.Drawing.Point(6, 43);
             this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(680, 206);
+            this.panel25.Size = new System.Drawing.Size(526, 184);
             this.panel25.TabIndex = 6;
             // 
             // lblSubtotal
@@ -833,7 +857,7 @@ namespace MD_LOGIN.MENU_PRICIPAL
             // 
             this.lblIVA.AutoSize = true;
             this.lblIVA.Font = new System.Drawing.Font("Metropolis Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIVA.Location = new System.Drawing.Point(18, 47);
+            this.lblIVA.Location = new System.Drawing.Point(19, 70);
             this.lblIVA.Name = "lblIVA";
             this.lblIVA.Size = new System.Drawing.Size(86, 16);
             this.lblIVA.TabIndex = 0;
@@ -843,7 +867,7 @@ namespace MD_LOGIN.MENU_PRICIPAL
             // 
             this.lblDescuento.AutoSize = true;
             this.lblDescuento.Font = new System.Drawing.Font("Metropolis Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescuento.Location = new System.Drawing.Point(16, 75);
+            this.lblDescuento.Location = new System.Drawing.Point(18, 105);
             this.lblDescuento.Name = "lblDescuento";
             this.lblDescuento.Size = new System.Drawing.Size(95, 16);
             this.lblDescuento.TabIndex = 0;
@@ -853,11 +877,156 @@ namespace MD_LOGIN.MENU_PRICIPAL
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Metropolis Semi Bold", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(12, 108);
+            this.lblTotal.Location = new System.Drawing.Point(1, 13);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(113, 37);
             this.lblTotal.TabIndex = 1;
             this.lblTotal.Text = "Total";
+            // 
+            // btnVerGastos
+            // 
+            this.btnVerGastos.Location = new System.Drawing.Point(602, 5);
+            this.btnVerGastos.Name = "btnVerGastos";
+            this.btnVerGastos.Size = new System.Drawing.Size(111, 22);
+            this.btnVerGastos.TabIndex = 5;
+            this.btnVerGastos.Text = "Ver gastos";
+            this.btnVerGastos.UseVisualStyleBackColor = true;
+            // 
+            // panelTotal
+            // 
+            this.panelTotal.BackColor = System.Drawing.Color.Red;
+            this.panelTotal.Controls.Add(this.lblTotal);
+            this.panelTotal.Location = new System.Drawing.Point(5, 136);
+            this.panelTotal.Name = "panelTotal";
+            this.panelTotal.Size = new System.Drawing.Size(406, 69);
+            this.panelTotal.TabIndex = 2;
+            // 
+            // btnDescuento
+            // 
+            this.btnDescuento.Location = new System.Drawing.Point(286, 14);
+            this.btnDescuento.Name = "btnDescuento";
+            this.btnDescuento.Size = new System.Drawing.Size(192, 26);
+            this.btnDescuento.TabIndex = 3;
+            this.btnDescuento.Text = "Aplicar Descuento";
+            this.btnDescuento.UseVisualStyleBackColor = true;
+            // 
+            // btnRestaurar
+            // 
+            this.btnRestaurar.Location = new System.Drawing.Point(287, 51);
+            this.btnRestaurar.Name = "btnRestaurar";
+            this.btnRestaurar.Size = new System.Drawing.Size(190, 25);
+            this.btnRestaurar.TabIndex = 4;
+            this.btnRestaurar.Text = "Restaurar";
+            this.btnRestaurar.UseVisualStyleBackColor = true;
+            // 
+            // panel26
+            // 
+            this.panel26.Controls.Add(this.textBox1);
+            this.panel26.Controls.Add(this.lblNuevo);
+            this.panel26.Controls.Add(this.lblTotalActual);
+            this.panel26.Controls.Add(this.pictureBox18);
+            this.panel26.Controls.Add(this.button1);
+            this.panel26.Location = new System.Drawing.Point(3, 1);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(520, 185);
+            this.panel26.TabIndex = 5;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.BackColor = System.Drawing.Color.Red;
+            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
+            this.pictureBox18.Location = new System.Drawing.Point(4, 3);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(95, 47);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox18.TabIndex = 0;
+            this.pictureBox18.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(4, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(518, 47);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // lblTotalActual
+            // 
+            this.lblTotalActual.AutoSize = true;
+            this.lblTotalActual.Font = new System.Drawing.Font("Metropolis Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalActual.Location = new System.Drawing.Point(26, 85);
+            this.lblTotalActual.Name = "lblTotalActual";
+            this.lblTotalActual.Size = new System.Drawing.Size(102, 16);
+            this.lblTotalActual.TabIndex = 2;
+            this.lblTotalActual.Text = "Total actual";
+            // 
+            // lblNuevo
+            // 
+            this.lblNuevo.AutoSize = true;
+            this.lblNuevo.Font = new System.Drawing.Font("Metropolis Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNuevo.Location = new System.Drawing.Point(26, 132);
+            this.lblNuevo.Name = "lblNuevo";
+            this.lblNuevo.Size = new System.Drawing.Size(103, 16);
+            this.lblNuevo.TabIndex = 2;
+            this.lblNuevo.Text = "Nuevo total:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(131, 131);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(82, 20);
+            this.textBox1.TabIndex = 3;
+            // 
+            // panel27
+            // 
+            this.panel27.Controls.Add(this.btnVerVentas);
+            this.panel27.Controls.Add(this.btnEliminarVenta);
+            this.panel27.Controls.Add(this.btnPonerEspera);
+            this.panel27.Controls.Add(this.btnVentasEspera);
+            this.panel27.Location = new System.Drawing.Point(8, 230);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(881, 33);
+            this.panel27.TabIndex = 7;
+            // 
+            // btnVentasEspera
+            // 
+            this.btnVentasEspera.Location = new System.Drawing.Point(14, 3);
+            this.btnVentasEspera.Name = "btnVentasEspera";
+            this.btnVentasEspera.Size = new System.Drawing.Size(116, 27);
+            this.btnVentasEspera.TabIndex = 0;
+            this.btnVentasEspera.Text = "Ventas en espera";
+            this.btnVentasEspera.UseVisualStyleBackColor = true;
+            // 
+            // btnPonerEspera
+            // 
+            this.btnPonerEspera.Location = new System.Drawing.Point(150, 4);
+            this.btnPonerEspera.Name = "btnPonerEspera";
+            this.btnPonerEspera.Size = new System.Drawing.Size(116, 27);
+            this.btnPonerEspera.TabIndex = 0;
+            this.btnPonerEspera.Text = "Poner en espera";
+            this.btnPonerEspera.UseVisualStyleBackColor = true;
+            // 
+            // btnEliminarVenta
+            // 
+            this.btnEliminarVenta.Location = new System.Drawing.Point(285, 3);
+            this.btnEliminarVenta.Name = "btnEliminarVenta";
+            this.btnEliminarVenta.Size = new System.Drawing.Size(107, 28);
+            this.btnEliminarVenta.TabIndex = 1;
+            this.btnEliminarVenta.Text = "Eliminar Venta";
+            this.btnEliminarVenta.UseVisualStyleBackColor = true;
+            // 
+            // btnVerVentas
+            // 
+            this.btnVerVentas.Location = new System.Drawing.Point(652, 3);
+            this.btnVerVentas.Name = "btnVerVentas";
+            this.btnVerVentas.Size = new System.Drawing.Size(180, 30);
+            this.btnVerVentas.TabIndex = 2;
+            this.btnVerVentas.Text = "Ver ventas y devoluciones";
+            this.btnVerVentas.UseVisualStyleBackColor = true;
             // 
             // MenuPrincipal
             // 
@@ -929,6 +1098,12 @@ namespace MD_LOGIN.MENU_PRICIPAL
             this.panel24.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
+            this.panelTotal.ResumeLayout(false);
+            this.panelTotal.PerformLayout();
+            this.panel26.ResumeLayout(false);
+            this.panel26.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            this.panel27.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1007,5 +1182,20 @@ namespace MD_LOGIN.MENU_PRICIPAL
         private System.Windows.Forms.Label lblDescuento;
         private System.Windows.Forms.Label lblIVA;
         private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Panel panel26;
+        private System.Windows.Forms.Button btnRestaurar;
+        private System.Windows.Forms.Button btnDescuento;
+        private System.Windows.Forms.Panel panelTotal;
+        private System.Windows.Forms.Button btnVerGastos;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox18;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblNuevo;
+        private System.Windows.Forms.Label lblTotalActual;
+        private System.Windows.Forms.Panel panel27;
+        private System.Windows.Forms.Button btnPonerEspera;
+        private System.Windows.Forms.Button btnVentasEspera;
+        private System.Windows.Forms.Button btnVerVentas;
+        private System.Windows.Forms.Button btnEliminarVenta;
     }
 }
