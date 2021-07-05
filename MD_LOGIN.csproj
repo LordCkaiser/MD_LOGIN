@@ -52,6 +52,8 @@
     <Compile Include="CAJA\APERTURA_DE_CAJA.designer.cs">
       <DependentUpon>APERTURA_DE_CAJA.cs</DependentUpon>
     </Compile>
+    <Compile Include="CONEXION\Desencryptacion.cs" />
+    <Compile Include="CONEXION\Encryptacion.cs" />
     <Compile Include="CONEXION\Tamaño_automatio_de_datatable.cs" />
     <Compile Include="MENU_PRICIPAL\MenuPrincipal.cs">
       <SubType>Form</SubType>
