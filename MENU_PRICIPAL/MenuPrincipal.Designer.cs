@@ -91,6 +91,17 @@ namespace MD_LOGIN.MENU_PRICIPAL
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.panel23 = new System.Windows.Forms.Panel();
+            this.btnInsVarios = new System.Windows.Forms.Button();
+            this.btnMayoreo = new System.Windows.Forms.Button();
+            this.btnIngVarios = new System.Windows.Forms.Button();
+            this.btnGastosVarios = new System.Windows.Forms.Button();
+            this.btnProdServ = new System.Windows.Forms.Button();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.lblSubtotal = new System.Windows.Forms.Label();
+            this.lblIVA = new System.Windows.Forms.Label();
+            this.lblDescuento = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -129,6 +140,9 @@ namespace MD_LOGIN.MENU_PRICIPAL
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            this.panel23.SuspendLayout();
+            this.panel24.SuspendLayout();
+            this.panel25.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -728,10 +742,122 @@ namespace MD_LOGIN.MENU_PRICIPAL
             // 
             // panel23
             // 
-            this.panel23.Location = new System.Drawing.Point(0, 534);
+            this.panel23.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel23.Controls.Add(this.panel25);
+            this.panel23.Controls.Add(this.panel24);
+            this.panel23.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel23.Location = new System.Drawing.Point(0, 436);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(1277, 165);
+            this.panel23.Size = new System.Drawing.Size(886, 264);
             this.panel23.TabIndex = 2;
+            // 
+            // btnInsVarios
+            // 
+            this.btnInsVarios.Location = new System.Drawing.Point(22, 3);
+            this.btnInsVarios.Name = "btnInsVarios";
+            this.btnInsVarios.Size = new System.Drawing.Size(81, 25);
+            this.btnInsVarios.TabIndex = 0;
+            this.btnInsVarios.Text = "Ins varios";
+            this.btnInsVarios.UseVisualStyleBackColor = true;
+            // 
+            // btnMayoreo
+            // 
+            this.btnMayoreo.Location = new System.Drawing.Point(120, 3);
+            this.btnMayoreo.Name = "btnMayoreo";
+            this.btnMayoreo.Size = new System.Drawing.Size(76, 25);
+            this.btnMayoreo.TabIndex = 1;
+            this.btnMayoreo.Text = "Mayoreo";
+            this.btnMayoreo.UseVisualStyleBackColor = true;
+            // 
+            // btnIngVarios
+            // 
+            this.btnIngVarios.Location = new System.Drawing.Point(210, 3);
+            this.btnIngVarios.Name = "btnIngVarios";
+            this.btnIngVarios.Size = new System.Drawing.Size(96, 24);
+            this.btnIngVarios.TabIndex = 2;
+            this.btnIngVarios.Text = "Ingresos varios";
+            this.btnIngVarios.UseVisualStyleBackColor = true;
+            // 
+            // btnGastosVarios
+            // 
+            this.btnGastosVarios.Location = new System.Drawing.Point(312, 3);
+            this.btnGastosVarios.Name = "btnGastosVarios";
+            this.btnGastosVarios.Size = new System.Drawing.Size(100, 25);
+            this.btnGastosVarios.TabIndex = 3;
+            this.btnGastosVarios.Text = "Gastos varios";
+            this.btnGastosVarios.UseVisualStyleBackColor = true;
+            // 
+            // btnProdServ
+            // 
+            this.btnProdServ.Location = new System.Drawing.Point(433, 3);
+            this.btnProdServ.Name = "btnProdServ";
+            this.btnProdServ.Size = new System.Drawing.Size(146, 24);
+            this.btnProdServ.TabIndex = 4;
+            this.btnProdServ.Text = "Prodcuto/Servicio rapido";
+            this.btnProdServ.UseVisualStyleBackColor = true;
+            // 
+            // panel24
+            // 
+            this.panel24.Controls.Add(this.btnIngVarios);
+            this.panel24.Controls.Add(this.btnProdServ);
+            this.panel24.Controls.Add(this.btnInsVarios);
+            this.panel24.Controls.Add(this.btnGastosVarios);
+            this.panel24.Controls.Add(this.btnMayoreo);
+            this.panel24.Location = new System.Drawing.Point(5, 3);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(669, 37);
+            this.panel24.TabIndex = 5;
+            // 
+            // panel25
+            // 
+            this.panel25.Controls.Add(this.lblTotal);
+            this.panel25.Controls.Add(this.lblDescuento);
+            this.panel25.Controls.Add(this.lblIVA);
+            this.panel25.Controls.Add(this.lblSubtotal);
+            this.panel25.Location = new System.Drawing.Point(6, 43);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(680, 206);
+            this.panel25.TabIndex = 6;
+            // 
+            // lblSubtotal
+            // 
+            this.lblSubtotal.AutoSize = true;
+            this.lblSubtotal.Font = new System.Drawing.Font("Metropolis Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubtotal.Location = new System.Drawing.Point(18, 15);
+            this.lblSubtotal.Name = "lblSubtotal";
+            this.lblSubtotal.Size = new System.Drawing.Size(87, 16);
+            this.lblSubtotal.TabIndex = 0;
+            this.lblSubtotal.Text = "Sub Total:";
+            // 
+            // lblIVA
+            // 
+            this.lblIVA.AutoSize = true;
+            this.lblIVA.Font = new System.Drawing.Font("Metropolis Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIVA.Location = new System.Drawing.Point(18, 47);
+            this.lblIVA.Name = "lblIVA";
+            this.lblIVA.Size = new System.Drawing.Size(86, 16);
+            this.lblIVA.TabIndex = 0;
+            this.lblIVA.Text = "IVA (16%):";
+            // 
+            // lblDescuento
+            // 
+            this.lblDescuento.AutoSize = true;
+            this.lblDescuento.Font = new System.Drawing.Font("Metropolis Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescuento.Location = new System.Drawing.Point(16, 75);
+            this.lblDescuento.Name = "lblDescuento";
+            this.lblDescuento.Size = new System.Drawing.Size(95, 16);
+            this.lblDescuento.TabIndex = 0;
+            this.lblDescuento.Text = "Descuento:";
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Metropolis Semi Bold", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(12, 108);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(113, 37);
+            this.lblTotal.TabIndex = 1;
+            this.lblTotal.Text = "Total";
             // 
             // MenuPrincipal
             // 
@@ -799,6 +925,10 @@ namespace MD_LOGIN.MENU_PRICIPAL
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            this.panel23.ResumeLayout(false);
+            this.panel24.ResumeLayout(false);
+            this.panel25.ResumeLayout(false);
+            this.panel25.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -866,5 +996,16 @@ namespace MD_LOGIN.MENU_PRICIPAL
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.Panel panel25;
+        private System.Windows.Forms.Label lblSubtotal;
+        private System.Windows.Forms.Panel panel24;
+        private System.Windows.Forms.Button btnIngVarios;
+        private System.Windows.Forms.Button btnProdServ;
+        private System.Windows.Forms.Button btnInsVarios;
+        private System.Windows.Forms.Button btnGastosVarios;
+        private System.Windows.Forms.Button btnMayoreo;
+        private System.Windows.Forms.Label lblDescuento;
+        private System.Windows.Forms.Label lblIVA;
+        private System.Windows.Forms.Label lblTotal;
     }
 }
