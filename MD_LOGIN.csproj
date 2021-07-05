@@ -58,6 +58,7 @@
     <Compile Include="MODULOS\ALMACEN.Designer.cs">
       <DependentUpon>ALMACEN.cs</DependentUpon>
     </Compile>
+    <Compile Include="CONEXION\CONEXIONMAESTRA.cs" />
     <Compile Include="MODULOS\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,9 +107,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CONEXION\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
