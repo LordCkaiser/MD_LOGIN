@@ -92,6 +92,12 @@
     <Compile Include="MODULOS\PRODUCTOS\productosOK.Designer.cs">
       <DependentUpon>productosOK.cs</DependentUpon>
     </Compile>
+    <Compile Include="MODULOS\PRODUCTOS\Productos_ok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\PRODUCTOS\Productos_ok.designer.cs">
+      <DependentUpon>Productos_ok.cs</DependentUpon>
+    </Compile>
     <Compile Include="MODULOS\Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MODULOS\PRODUCTOS\productosOK.resx">
       <DependentUpon>productosOK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\PRODUCTOS\Productos_ok.resx">
+      <DependentUpon>Productos_ok.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MODULOS\Usuarios.aa-ER.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
