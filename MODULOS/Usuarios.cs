@@ -53,7 +53,7 @@ namespace MD_LOGIN
                             try
                             {
                                 SqlConnection con = new SqlConnection();
-                                con.ConnectionString = Conexion.CONEXIONMAESTRA.conexion;
+                                con.ConnectionString = CONEXION.CONEXIONMAESTRA.conexion;
                                 con.Open();
                                 SqlCommand cmd = new SqlCommand();
                                 cmd = new SqlCommand("insertar_usuario", con);
@@ -105,7 +105,7 @@ namespace MD_LOGIN
                 DataTable dt = new DataTable();
                 SqlDataAdapter da;
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = Conexion.CONEXIONMAESTRA.conexion;
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.conexion;
                 con.Open();
                 da = new SqlDataAdapter("mostrar_usuario", con);
                 da.Fill(dt);
@@ -120,7 +120,7 @@ namespace MD_LOGIN
                 MessageBox.Show(ex.Message);
             }
 
-            Conexion.Tamaño_automatio_de_datatable.Multilinea(ref datausuarios);
+            CONEXION.Tamaño_automatio_de_datatable.Multilinea(ref datausuarios);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -144,7 +144,7 @@ namespace MD_LOGIN
                             try
                             {
                                 SqlConnection con = new SqlConnection();
-                                con.ConnectionString = Conexion.CONEXIONMAESTRA.conexion;
+                                con.ConnectionString = CONEXION.CONEXIONMAESTRA.conexion;
                                 con.Open();
                                 SqlCommand cmd = new SqlCommand();
                                 cmd = new SqlCommand("editar_usuario", con);
@@ -252,7 +252,7 @@ namespace MD_LOGIN
                                 try
                                 {
                                     SqlConnection con = new SqlConnection();
-                                    con.ConnectionString = Conexion.CONEXIONMAESTRA.conexion;
+                                    con.ConnectionString = CONEXION.CONEXIONMAESTRA.conexion;
                                     con.Open();
                                     cmd = new SqlCommand("eliminar_usuario", con);
                                     cmd.CommandType = CommandType.StoredProcedure;
@@ -310,7 +310,7 @@ namespace MD_LOGIN
                 DataTable dt = new DataTable();
                 SqlDataAdapter da;
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = Conexion.CONEXIONMAESTRA.conexion;
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.conexion;
                 con.Open();
                 da = new SqlDataAdapter("buscar_usuario", con);
               
@@ -328,7 +328,7 @@ namespace MD_LOGIN
                 MessageBox.Show(ex.Message);
             }
 
-            Conexion.Tamaño_automatio_de_datatable.Multilinea(ref datausuarios);
+            CONEXION.Tamaño_automatio_de_datatable.Multilinea(ref datausuarios);
         }
         private void txtbuscar_TextChanged(object sender, EventArgs e)
         {

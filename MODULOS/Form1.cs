@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using MD_LOGIN.Conexion;
+
 using MD_LOGIN.MODULOS;
 
 
@@ -26,7 +26,7 @@ namespace MD_LOGIN
             try
             {
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = Conexion.CONEXIONMAESTRA.conexion;
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.conexion;
                 con.Open();
               
                 SqlCommand cmd = new SqlCommand("select nombre,rol from USUARIOS where login =@login and password=@pass", con);

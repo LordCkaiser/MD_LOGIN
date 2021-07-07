@@ -7,7 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
-namespace MD_LOGIN.Conexion
+namespace MD_LOGIN.CONEXION
 {
     class Tamaño_automatio_de_datatable
     {
