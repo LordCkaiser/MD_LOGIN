@@ -16,7 +16,7 @@ namespace MD_LOGIN
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PANEL_DE_ADMINISTRACION_DEL_SOFTWARE.CONEXION_MANUAL ());
+            Application.Run(new MODULOS.PRODUCTOS.productosOK ());
         }
     }
 }

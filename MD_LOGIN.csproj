@@ -86,6 +86,12 @@
     <Compile Include="MODULOS\GERENCIA.Designer.cs">
       <DependentUpon>GERENCIA.cs</DependentUpon>
     </Compile>
+    <Compile Include="MODULOS\PRODUCTOS\productosOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\PRODUCTOS\productosOK.Designer.cs">
+      <DependentUpon>productosOK.cs</DependentUpon>
+    </Compile>
     <Compile Include="MODULOS\Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MODULOS\GERENCIA.resx">
       <DependentUpon>GERENCIA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\PRODUCTOS\productosOK.resx">
+      <DependentUpon>productosOK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MODULOS\Usuarios.aa-ER.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
