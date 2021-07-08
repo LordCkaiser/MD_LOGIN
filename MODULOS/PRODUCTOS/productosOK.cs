@@ -21,5 +21,10 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
         {
 
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

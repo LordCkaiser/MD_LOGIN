@@ -31,23 +31,23 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(productosOK));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.Panel29 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.MenuStrip4 = new System.Windows.Forms.MenuStrip();
-            this.ToolStripMenuItem15 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Panel27 = new System.Windows.Forms.Panel();
             this.ProgressBar1 = new System.Windows.Forms.ProgressBar();
             this.Panel24 = new System.Windows.Forms.Panel();
             this.datalistado_empresa = new System.Windows.Forms.DataGridView();
             this.DataGridViewCheckBoxColumn9 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.MenuStrip4 = new System.Windows.Forms.MenuStrip();
+            this.ToolStripMenuItem15 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.Panel29 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblcosto_inventario = new System.Windows.Forms.Label();
@@ -56,74 +56,76 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.Label7 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip3 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip5 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip6 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip7 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.txtfechaoka = new System.Windows.Forms.DateTimePicker();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.txtfechaoka = new System.Windows.Forms.DateTimePicker();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.menuStrip7 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip6 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip5 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip3 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.MenuStrip4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.Panel27.SuspendLayout();
             this.Panel24.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado_empresa)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.MenuStrip4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.panel11.SuspendLayout();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel9.SuspendLayout();
+            this.menuStrip7.SuspendLayout();
+            this.menuStrip6.SuspendLayout();
+            this.menuStrip2.SuspendLayout();
+            this.menuStrip5.SuspendLayout();
+            this.menuStrip3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            this.menuStrip2.SuspendLayout();
-            this.menuStrip3.SuspendLayout();
-            this.menuStrip5.SuspendLayout();
-            this.menuStrip6.SuspendLayout();
-            this.menuStrip7.SuspendLayout();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -138,6 +140,13 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1271, 47);
             this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(32, 46);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(846, 42);
+            this.panel2.TabIndex = 3;
             // 
             // pictureBox2
             // 
@@ -169,13 +178,6 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(32, 46);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(846, 42);
-            this.panel2.TabIndex = 3;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
@@ -192,71 +194,15 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.panel3.Size = new System.Drawing.Size(1271, 38);
             this.panel3.TabIndex = 1;
             // 
-            // textBox1
+            // pictureBox4
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(52, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(267, 13);
-            this.textBox1.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Controls.Add(this.panel3);
-            this.panel4.Controls.Add(this.panel1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1271, 87);
-            this.panel4.TabIndex = 2;
-            // 
-            // Panel29
-            // 
-            this.Panel29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(27)))), ((int)(((byte)(59)))));
-            this.Panel29.Location = new System.Drawing.Point(49, 28);
-            this.Panel29.Name = "Panel29";
-            this.Panel29.Size = new System.Drawing.Size(273, 2);
-            this.Panel29.TabIndex = 534;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(326, 4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(41, 27);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 535;
-            this.pictureBox3.TabStop = false;
-            // 
-            // MenuStrip4
-            // 
-            this.MenuStrip4.AutoSize = false;
-            this.MenuStrip4.BackColor = System.Drawing.Color.White;
-            this.MenuStrip4.Dock = System.Windows.Forms.DockStyle.None;
-            this.MenuStrip4.Font = new System.Drawing.Font("Metropolis Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MenuStrip4.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
-            this.MenuStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItem15});
-            this.MenuStrip4.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MenuStrip4.Location = new System.Drawing.Point(523, 1);
-            this.MenuStrip4.Name = "MenuStrip4";
-            this.MenuStrip4.ShowItemToolTips = true;
-            this.MenuStrip4.Size = new System.Drawing.Size(264, 36);
-            this.MenuStrip4.TabIndex = 536;
-            this.MenuStrip4.Text = "MenuStrip4";
-            // 
-            // ToolStripMenuItem15
-            // 
-            this.ToolStripMenuItem15.BackColor = System.Drawing.Color.White;
-            this.ToolStripMenuItem15.Font = new System.Drawing.Font("Metropolis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ToolStripMenuItem15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ToolStripMenuItem15.Image = ((System.Drawing.Image)(resources.GetObject("ToolStripMenuItem15.Image")));
-            this.ToolStripMenuItem15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ToolStripMenuItem15.Name = "ToolStripMenuItem15";
-            this.ToolStripMenuItem15.Size = new System.Drawing.Size(213, 32);
-            this.ToolStripMenuItem15.Text = "&Importar desde EXCEL";
-            this.ToolStripMenuItem15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(860, -1);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(57, 38);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 539;
+            this.pictureBox4.TabStop = false;
             // 
             // Panel27
             // 
@@ -313,15 +259,71 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.DataGridViewCheckBoxColumn9.ReadOnly = true;
             this.DataGridViewCheckBoxColumn9.Visible = false;
             // 
-            // pictureBox4
+            // MenuStrip4
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(860, -1);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(57, 38);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 539;
-            this.pictureBox4.TabStop = false;
+            this.MenuStrip4.AutoSize = false;
+            this.MenuStrip4.BackColor = System.Drawing.Color.White;
+            this.MenuStrip4.Dock = System.Windows.Forms.DockStyle.None;
+            this.MenuStrip4.Font = new System.Drawing.Font("Metropolis Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MenuStrip4.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
+            this.MenuStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItem15});
+            this.MenuStrip4.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MenuStrip4.Location = new System.Drawing.Point(523, 1);
+            this.MenuStrip4.Name = "MenuStrip4";
+            this.MenuStrip4.ShowItemToolTips = true;
+            this.MenuStrip4.Size = new System.Drawing.Size(264, 36);
+            this.MenuStrip4.TabIndex = 536;
+            this.MenuStrip4.Text = "MenuStrip4";
+            // 
+            // ToolStripMenuItem15
+            // 
+            this.ToolStripMenuItem15.BackColor = System.Drawing.Color.White;
+            this.ToolStripMenuItem15.Font = new System.Drawing.Font("Metropolis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToolStripMenuItem15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ToolStripMenuItem15.Image = ((System.Drawing.Image)(resources.GetObject("ToolStripMenuItem15.Image")));
+            this.ToolStripMenuItem15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ToolStripMenuItem15.Name = "ToolStripMenuItem15";
+            this.ToolStripMenuItem15.Size = new System.Drawing.Size(213, 32);
+            this.ToolStripMenuItem15.Text = "&Importar desde EXCEL";
+            this.ToolStripMenuItem15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(326, 4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(41, 27);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 535;
+            this.pictureBox3.TabStop = false;
+            // 
+            // Panel29
+            // 
+            this.Panel29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(27)))), ((int)(((byte)(59)))));
+            this.Panel29.Location = new System.Drawing.Point(49, 28);
+            this.Panel29.Name = "Panel29";
+            this.Panel29.Size = new System.Drawing.Size(273, 2);
+            this.Panel29.TabIndex = 534;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Location = new System.Drawing.Point(52, 10);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(267, 13);
+            this.textBox1.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.Controls.Add(this.panel3);
+            this.panel4.Controls.Add(this.panel1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1271, 87);
+            this.panel4.TabIndex = 2;
             // 
             // panel5
             // 
@@ -400,6 +402,7 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.pictureBox7);
             this.panel8.Controls.Add(this.pictureBox6);
             this.panel8.Controls.Add(this.panel11);
             this.panel8.Controls.Add(this.panel10);
@@ -428,282 +431,88 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.panel8.Size = new System.Drawing.Size(1208, 511);
             this.panel8.TabIndex = 0;
             // 
-            // label2
+            // pictureBox7
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(113, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 19);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Descripcion:";
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(429, 428);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(113, 62);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 25;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
-            // textBox2
+            // pictureBox6
             // 
-            this.textBox2.Location = new System.Drawing.Point(235, 38);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(508, 20);
-            this.textBox2.TabIndex = 1;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(157, 428);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(113, 60);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 24;
+            this.pictureBox6.TabStop = false;
             // 
-            // radioButton1
+            // panel11
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Metropolis Medium", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(236, 67);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(116, 19);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Uidad/Pieza";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.panel11.Controls.Add(this.txtfechaoka);
+            this.panel11.Controls.Add(this.checkBox2);
+            this.panel11.Controls.Add(this.label12);
+            this.panel11.Controls.Add(this.label11);
+            this.panel11.Controls.Add(this.label10);
+            this.panel11.Location = new System.Drawing.Point(27, 337);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(581, 125);
+            this.panel11.TabIndex = 23;
             // 
-            // radioButton2
+            // txtfechaoka
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Metropolis Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(410, 67);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(73, 19);
-            this.radioButton2.TabIndex = 3;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Granel";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.txtfechaoka.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.txtfechaoka.Location = new System.Drawing.Point(213, 82);
+            this.txtfechaoka.Name = "txtfechaoka";
+            this.txtfechaoka.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtfechaoka.Size = new System.Drawing.Size(149, 20);
+            this.txtfechaoka.TabIndex = 14;
             // 
-            // label3
+            // checkBox2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(165, 96);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 19);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Costo:";
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.checkBox2.Location = new System.Drawing.Point(381, 81);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(116, 23);
+            this.checkBox2.TabIndex = 3;
+            this.checkBox2.Text = "No aplica";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // label12
             // 
-            this.textBox3.Location = new System.Drawing.Point(238, 95);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(128, 20);
-            this.textBox3.TabIndex = 5;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label12.Location = new System.Drawing.Point(2, 83);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(214, 19);
+            this.label12.TabIndex = 2;
+            this.label12.Text = "Fecha de vencimiento:";
             // 
-            // label4
+            // label11
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(108, 126);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(121, 19);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "% Ganancia:";
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label11.Location = new System.Drawing.Point(136, 44);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(80, 19);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Minimo:";
             // 
-            // textBox4
+            // label10
             // 
-            this.textBox4.Location = new System.Drawing.Point(235, 127);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(131, 20);
-            this.textBox4.TabIndex = 7;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(235, 162);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(131, 20);
-            this.textBox5.TabIndex = 9;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(100, 162);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(129, 19);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Precio venta:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(69, 198);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(160, 19);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Precio mayoreo:";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(235, 197);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(131, 20);
-            this.textBox6.TabIndex = 9;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(157, 231);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 19);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Grupo:";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(235, 230);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(131, 20);
-            this.textBox7.TabIndex = 11;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(54, 262);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(174, 19);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "Codigo de barras:";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(275, 261);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(174, 20);
-            this.textBox8.TabIndex = 13;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(233, 258);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(37, 25);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 14;
-            this.pictureBox5.TabStop = false;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
-            this.menuStrip1.Location = new System.Drawing.Point(464, 260);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(164, 24);
-            this.menuStrip1.TabIndex = 15;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Font = new System.Drawing.Font("Metropolis Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem1.Image")));
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(156, 20);
-            this.toolStripMenuItem1.Text = "Generar codigo";
-            // 
-            // menuStrip2
-            // 
-            this.menuStrip2.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2});
-            this.menuStrip2.Location = new System.Drawing.Point(3, 5);
-            this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(117, 24);
-            this.menuStrip2.TabIndex = 16;
-            this.menuStrip2.Text = "menuStrip2";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(109, 20);
-            this.toolStripMenuItem2.Text = "Guardar cambios";
-            // 
-            // menuStrip3
-            // 
-            this.menuStrip3.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem3});
-            this.menuStrip3.Location = new System.Drawing.Point(148, 5);
-            this.menuStrip3.Name = "menuStrip3";
-            this.menuStrip3.Size = new System.Drawing.Size(104, 24);
-            this.menuStrip3.TabIndex = 17;
-            this.menuStrip3.Text = "menuStrip3";
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(96, 20);
-            this.toolStripMenuItem3.Text = "Guardar grupo";
-            // 
-            // menuStrip5
-            // 
-            this.menuStrip5.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip5.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem4});
-            this.menuStrip5.Location = new System.Drawing.Point(160, 5);
-            this.menuStrip5.Name = "menuStrip5";
-            this.menuStrip5.Size = new System.Drawing.Size(104, 24);
-            this.menuStrip5.TabIndex = 17;
-            this.menuStrip5.Text = "menuStrip3";
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(96, 20);
-            this.toolStripMenuItem4.Text = "Guardar grupo";
-            // 
-            // menuStrip6
-            // 
-            this.menuStrip6.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip6.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem5});
-            this.menuStrip6.Location = new System.Drawing.Point(304, 5);
-            this.menuStrip6.Name = "menuStrip6";
-            this.menuStrip6.Size = new System.Drawing.Size(73, 24);
-            this.menuStrip6.TabIndex = 18;
-            this.menuStrip6.Text = "menuStrip3";
-            // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(65, 20);
-            this.toolStripMenuItem5.Text = "Cancelar";
-            // 
-            // menuStrip7
-            // 
-            this.menuStrip7.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip7.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem6});
-            this.menuStrip7.Location = new System.Drawing.Point(394, 5);
-            this.menuStrip7.Name = "menuStrip7";
-            this.menuStrip7.Size = new System.Drawing.Size(104, 24);
-            this.menuStrip7.TabIndex = 19;
-            this.menuStrip7.Text = "menuStrip3";
-            // 
-            // toolStripMenuItem6
-            // 
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(96, 20);
-            this.toolStripMenuItem6.Text = "Agregar grupo";
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.menuStrip7);
-            this.panel9.Controls.Add(this.menuStrip6);
-            this.panel9.Controls.Add(this.menuStrip2);
-            this.panel9.Controls.Add(this.menuStrip5);
-            this.panel9.Controls.Add(this.menuStrip3);
-            this.panel9.Location = new System.Drawing.Point(390, 220);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(548, 37);
-            this.panel9.TabIndex = 20;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(801, 309);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(263, 153);
-            this.dataGridView1.TabIndex = 21;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label10.Location = new System.Drawing.Point(111, 12);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(107, 19);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Existencia:";
             // 
             // panel10
             // 
@@ -725,77 +534,282 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.checkBox1.Text = "Controlar inventario";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // panel11
+            // dataGridView1
             // 
-            this.panel11.Controls.Add(this.txtfechaoka);
-            this.panel11.Controls.Add(this.checkBox2);
-            this.panel11.Controls.Add(this.label12);
-            this.panel11.Controls.Add(this.label11);
-            this.panel11.Controls.Add(this.label10);
-            this.panel11.Location = new System.Drawing.Point(439, 346);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(581, 125);
-            this.panel11.TabIndex = 23;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(801, 309);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(263, 153);
+            this.dataGridView1.TabIndex = 21;
             // 
-            // label10
+            // panel9
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label10.Location = new System.Drawing.Point(111, 12);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(107, 19);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Existencia:";
+            this.panel9.Controls.Add(this.menuStrip7);
+            this.panel9.Controls.Add(this.menuStrip6);
+            this.panel9.Controls.Add(this.menuStrip2);
+            this.panel9.Controls.Add(this.menuStrip5);
+            this.panel9.Controls.Add(this.menuStrip3);
+            this.panel9.Location = new System.Drawing.Point(390, 220);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(548, 37);
+            this.panel9.TabIndex = 20;
             // 
-            // label11
+            // menuStrip7
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label11.Location = new System.Drawing.Point(136, 44);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(80, 19);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Minimo:";
+            this.menuStrip7.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip7.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem6});
+            this.menuStrip7.Location = new System.Drawing.Point(394, 5);
+            this.menuStrip7.Name = "menuStrip7";
+            this.menuStrip7.Size = new System.Drawing.Size(104, 24);
+            this.menuStrip7.TabIndex = 19;
+            this.menuStrip7.Text = "menuStrip3";
             // 
-            // label12
+            // toolStripMenuItem6
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label12.Location = new System.Drawing.Point(2, 83);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(214, 19);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "Fecha de vencimiento:";
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(96, 20);
+            this.toolStripMenuItem6.Text = "Agregar grupo";
             // 
-            // checkBox2
+            // menuStrip6
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.checkBox2.Location = new System.Drawing.Point(381, 81);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(116, 23);
-            this.checkBox2.TabIndex = 3;
-            this.checkBox2.Text = "No aplica";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.menuStrip6.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip6.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem5});
+            this.menuStrip6.Location = new System.Drawing.Point(304, 5);
+            this.menuStrip6.Name = "menuStrip6";
+            this.menuStrip6.Size = new System.Drawing.Size(73, 24);
+            this.menuStrip6.TabIndex = 18;
+            this.menuStrip6.Text = "menuStrip3";
             // 
-            // txtfechaoka
+            // toolStripMenuItem5
             // 
-            this.txtfechaoka.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtfechaoka.Location = new System.Drawing.Point(213, 82);
-            this.txtfechaoka.Name = "txtfechaoka";
-            this.txtfechaoka.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtfechaoka.Size = new System.Drawing.Size(149, 20);
-            this.txtfechaoka.TabIndex = 14;
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(65, 20);
+            this.toolStripMenuItem5.Text = "Cancelar";
             // 
-            // pictureBox6
+            // menuStrip2
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(90, 428);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(113, 60);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 24;
-            this.pictureBox6.TabStop = false;
+            this.menuStrip2.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem2});
+            this.menuStrip2.Location = new System.Drawing.Point(3, 5);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.Size = new System.Drawing.Size(117, 24);
+            this.menuStrip2.TabIndex = 16;
+            this.menuStrip2.Text = "menuStrip2";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(109, 20);
+            this.toolStripMenuItem2.Text = "Guardar cambios";
+            // 
+            // menuStrip5
+            // 
+            this.menuStrip5.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip5.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem4});
+            this.menuStrip5.Location = new System.Drawing.Point(160, 5);
+            this.menuStrip5.Name = "menuStrip5";
+            this.menuStrip5.Size = new System.Drawing.Size(104, 24);
+            this.menuStrip5.TabIndex = 17;
+            this.menuStrip5.Text = "menuStrip3";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(96, 20);
+            this.toolStripMenuItem4.Text = "Guardar grupo";
+            // 
+            // menuStrip3
+            // 
+            this.menuStrip3.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem3});
+            this.menuStrip3.Location = new System.Drawing.Point(148, 5);
+            this.menuStrip3.Name = "menuStrip3";
+            this.menuStrip3.Size = new System.Drawing.Size(104, 24);
+            this.menuStrip3.TabIndex = 17;
+            this.menuStrip3.Text = "menuStrip3";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(96, 20);
+            this.toolStripMenuItem3.Text = "Guardar grupo";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(233, 258);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(37, 25);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 14;
+            this.pictureBox5.TabStop = false;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(275, 261);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(174, 20);
+            this.textBox8.TabIndex = 13;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(54, 262);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(174, 19);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "Codigo de barras:";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(235, 230);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(131, 20);
+            this.textBox7.TabIndex = 11;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(157, 231);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(71, 19);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Grupo:";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(235, 197);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(131, 20);
+            this.textBox6.TabIndex = 9;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(235, 162);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(131, 20);
+            this.textBox5.TabIndex = 9;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(69, 198);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(160, 19);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Precio mayoreo:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(100, 162);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(129, 19);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Precio venta:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(235, 127);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(131, 20);
+            this.textBox4.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(108, 126);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(121, 19);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "% Ganancia:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(238, 95);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(128, 20);
+            this.textBox3.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(165, 96);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 19);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Costo:";
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Metropolis Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(410, 67);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(73, 19);
+            this.radioButton2.TabIndex = 3;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Granel";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Metropolis Medium", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(236, 67);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(116, 19);
+            this.radioButton1.TabIndex = 2;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Uidad/Pieza";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(235, 38);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(508, 20);
+            this.textBox2.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(113, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(121, 19);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Descripcion:";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.menuStrip1.Location = new System.Drawing.Point(464, 260);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(164, 24);
+            this.menuStrip1.TabIndex = 15;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Metropolis Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem1.Image")));
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(156, 20);
+            this.toolStripMenuItem1.Text = "Generar codigo";
             // 
             // productosOK
             // 
@@ -817,41 +831,42 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.MenuStrip4.ResumeLayout(false);
-            this.MenuStrip4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.Panel27.ResumeLayout(false);
             this.Panel24.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.datalistado_empresa)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.MenuStrip4.ResumeLayout(false);
+            this.MenuStrip4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.menuStrip7.ResumeLayout(false);
+            this.menuStrip7.PerformLayout();
+            this.menuStrip6.ResumeLayout(false);
+            this.menuStrip6.PerformLayout();
+            this.menuStrip2.ResumeLayout(false);
+            this.menuStrip2.PerformLayout();
+            this.menuStrip5.ResumeLayout(false);
+            this.menuStrip5.PerformLayout();
+            this.menuStrip3.ResumeLayout(false);
+            this.menuStrip3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.menuStrip2.ResumeLayout(false);
-            this.menuStrip2.PerformLayout();
-            this.menuStrip3.ResumeLayout(false);
-            this.menuStrip3.PerformLayout();
-            this.menuStrip5.ResumeLayout(false);
-            this.menuStrip5.PerformLayout();
-            this.menuStrip6.ResumeLayout(false);
-            this.menuStrip6.PerformLayout();
-            this.menuStrip7.ResumeLayout(false);
-            this.menuStrip7.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -925,5 +940,6 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
         private System.Windows.Forms.CheckBox checkBox2;
         internal System.Windows.Forms.DateTimePicker txtfechaoka;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }
