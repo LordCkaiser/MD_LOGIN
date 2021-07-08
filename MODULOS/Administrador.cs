@@ -26,5 +26,10 @@ namespace MD_LOGIN.MODULOS
         {
             this.Close();
         }
+
+        private void Administrador_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
