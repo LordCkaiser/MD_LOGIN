@@ -44,8 +44,6 @@ namespace MD_LOGIN.MODULOS.INVENTARIOS_KARDEX
             this.panel3 = new System.Windows.Forms.Panel();
             this.Panelv = new System.Windows.Forms.Panel();
             this.Panel9 = new System.Windows.Forms.Panel();
-            this.Label19 = new System.Windows.Forms.Label();
-            this.PictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.PanelR = new System.Windows.Forms.Panel();
             this.Panel6 = new System.Windows.Forms.Panel();
@@ -98,7 +96,7 @@ namespace MD_LOGIN.MODULOS.INVENTARIOS_KARDEX
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.datausuarios = new System.Windows.Forms.DataGridView();
+            this.dataListadoMovimientos = new System.Windows.Forms.DataGridView();
             this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel14 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -106,13 +104,13 @@ namespace MD_LOGIN.MODULOS.INVENTARIOS_KARDEX
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.datalistadoMovimientosACUMULADO_PRODUCTOS = new System.Windows.Forms.DataGridView();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.MenuStrip3.SuspendLayout();
             this.panel3.SuspendLayout();
             this.Panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.Panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -134,7 +132,7 @@ namespace MD_LOGIN.MODULOS.INVENTARIOS_KARDEX
             this.MenuStrip6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.datausuarios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListadoMovimientos)).BeginInit();
             this.panel14.SuspendLayout();
             this.menuStrip4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datalistadoMovimientosACUMULADO_PRODUCTOS)).BeginInit();
@@ -211,6 +209,7 @@ namespace MD_LOGIN.MODULOS.INVENTARIOS_KARDEX
             this.MenuStrip3.Size = new System.Drawing.Size(881, 58);
             this.MenuStrip3.TabIndex = 563;
             this.MenuStrip3.Text = "MenuStrip7";
+            this.MenuStrip3.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuStrip3_ItemClicked);
             // 
             // TKardex
             // 
@@ -263,8 +262,9 @@ namespace MD_LOGIN.MODULOS.INVENTARIOS_KARDEX
             this.TVencimientos.BackColor = System.Drawing.Color.White;
             this.TVencimientos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TVencimientos.ForeColor = System.Drawing.Color.Black;
+            this.TVencimientos.Image = ((System.Drawing.Image)(resources.GetObject("TVencimientos.Image")));
             this.TVencimientos.Name = "TVencimientos";
-            this.TVencimientos.Size = new System.Drawing.Size(230, 54);
+            this.TVencimientos.Size = new System.Drawing.Size(246, 54);
             this.TVencimientos.Text = "Vencimientos de Productos";
             this.TVencimientos.ToolTipText = "Vencimientos de Productos";
             // 
@@ -295,36 +295,13 @@ namespace MD_LOGIN.MODULOS.INVENTARIOS_KARDEX
             // 
             // Panel9
             // 
-            this.Panel9.Controls.Add(this.Label19);
-            this.Panel9.Controls.Add(this.PictureBox3);
+            this.Panel9.Controls.Add(this.label10);
             this.Panel9.Controls.Add(this.pictureBox4);
             this.Panel9.Dock = System.Windows.Forms.DockStyle.Right;
             this.Panel9.Location = new System.Drawing.Point(966, 0);
             this.Panel9.Name = "Panel9";
             this.Panel9.Size = new System.Drawing.Size(151, 59);
             this.Panel9.TabIndex = 605;
-            // 
-            // Label19
-            // 
-            this.Label19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.Label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Label19.Location = new System.Drawing.Point(20, 20);
-            this.Label19.Name = "Label19";
-            this.Label19.Size = new System.Drawing.Size(75, 23);
-            this.Label19.TabIndex = 597;
-            this.Label19.Text = "Entrada";
-            // 
-            // PictureBox3
-            // 
-            this.PictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox3.Image")));
-            this.PictureBox3.Location = new System.Drawing.Point(92, 20);
-            this.PictureBox3.Name = "PictureBox3";
-            this.PictureBox3.Size = new System.Drawing.Size(27, 23);
-            this.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox3.TabIndex = 601;
-            this.PictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
@@ -333,7 +310,7 @@ namespace MD_LOGIN.MODULOS.INVENTARIOS_KARDEX
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(5, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(142, 58);
+            this.pictureBox4.Size = new System.Drawing.Size(140, 39);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 596;
             this.pictureBox4.TabStop = false;
@@ -941,36 +918,36 @@ namespace MD_LOGIN.MODULOS.INVENTARIOS_KARDEX
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.datausuarios);
+            this.panel7.Controls.Add(this.dataListadoMovimientos);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(0, 263);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(540, 468);
             this.panel7.TabIndex = 605;
             // 
-            // datausuarios
+            // dataListadoMovimientos
             // 
-            this.datausuarios.AllowUserToAddRows = false;
-            this.datausuarios.AllowUserToResizeRows = false;
-            this.datausuarios.BackgroundColor = System.Drawing.Color.White;
-            this.datausuarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.datausuarios.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.datausuarios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.datausuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datausuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataListadoMovimientos.AllowUserToAddRows = false;
+            this.dataListadoMovimientos.AllowUserToResizeRows = false;
+            this.dataListadoMovimientos.BackgroundColor = System.Drawing.Color.White;
+            this.dataListadoMovimientos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataListadoMovimientos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataListadoMovimientos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataListadoMovimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataListadoMovimientos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
-            this.datausuarios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.datausuarios.EnableHeadersVisualStyles = false;
-            this.datausuarios.Location = new System.Drawing.Point(0, 0);
-            this.datausuarios.Name = "datausuarios";
-            this.datausuarios.ReadOnly = true;
-            this.datausuarios.RowHeadersVisible = false;
-            this.datausuarios.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datausuarios.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.AliceBlue;
-            this.datausuarios.RowTemplate.Height = 30;
-            this.datausuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datausuarios.Size = new System.Drawing.Size(540, 468);
-            this.datausuarios.TabIndex = 5;
+            this.dataListadoMovimientos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataListadoMovimientos.EnableHeadersVisualStyles = false;
+            this.dataListadoMovimientos.Location = new System.Drawing.Point(0, 0);
+            this.dataListadoMovimientos.Name = "dataListadoMovimientos";
+            this.dataListadoMovimientos.ReadOnly = true;
+            this.dataListadoMovimientos.RowHeadersVisible = false;
+            this.dataListadoMovimientos.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataListadoMovimientos.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.AliceBlue;
+            this.dataListadoMovimientos.RowTemplate.Height = 30;
+            this.dataListadoMovimientos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataListadoMovimientos.Size = new System.Drawing.Size(540, 468);
+            this.dataListadoMovimientos.TabIndex = 5;
             // 
             // Eliminar
             // 
@@ -1060,6 +1037,15 @@ namespace MD_LOGIN.MODULOS.INVENTARIOS_KARDEX
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.ReadOnly = true;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(42, 44);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(63, 13);
+            this.label10.TabIndex = 597;
+            this.label10.Text = "Dar entrada";
+            // 
             // INVENTARIO_MENU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1082,7 +1068,7 @@ namespace MD_LOGIN.MODULOS.INVENTARIOS_KARDEX
             this.MenuStrip3.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.Panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).EndInit();
+            this.Panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.Panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -1116,7 +1102,7 @@ namespace MD_LOGIN.MODULOS.INVENTARIOS_KARDEX
             this.MenuStrip6.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.datausuarios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListadoMovimientos)).EndInit();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
             this.menuStrip4.ResumeLayout(false);
@@ -1142,8 +1128,6 @@ namespace MD_LOGIN.MODULOS.INVENTARIOS_KARDEX
         internal System.Windows.Forms.Panel panel3;
         internal System.Windows.Forms.Panel Panelv;
         internal System.Windows.Forms.Panel Panel9;
-        internal System.Windows.Forms.Label Label19;
-        internal System.Windows.Forms.PictureBox PictureBox3;
         internal System.Windows.Forms.PictureBox pictureBox4;
         internal System.Windows.Forms.Panel PanelR;
         internal System.Windows.Forms.Panel Panel6;
@@ -1196,7 +1180,7 @@ namespace MD_LOGIN.MODULOS.INVENTARIOS_KARDEX
         internal System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.DataGridView datausuarios;
+        private System.Windows.Forms.DataGridView dataListadoMovimientos;
         private System.Windows.Forms.DataGridViewImageColumn Eliminar;
         private System.Windows.Forms.DataGridView datalistadoMovimientosACUMULADO_PRODUCTOS;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
@@ -1204,5 +1188,6 @@ namespace MD_LOGIN.MODULOS.INVENTARIOS_KARDEX
         private System.Windows.Forms.Label label7;
         internal System.Windows.Forms.MenuStrip menuStrip4;
         internal System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.Label label10;
     }
 }

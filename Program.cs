@@ -16,7 +16,7 @@ namespace MD_LOGIN
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MODULOS.PRODUCTOS.productosOK ());
+            Application.Run(new MODULOS.INVENTARIOS_KARDEX.INVENTARIO_MENU ());
         }
     }
 }

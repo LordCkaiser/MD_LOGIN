@@ -26,5 +26,10 @@ namespace MD_LOGIN.MODULOS.INVENTARIOS_KARDEX
         {
 
         }
+
+        private void MenuStrip3_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }
