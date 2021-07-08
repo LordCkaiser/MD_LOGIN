@@ -67,7 +67,9 @@
     <Compile Include="MODULOS\Administrador.Designer.cs">
       <DependentUpon>Administrador.cs</DependentUpon>
     </Compile>
-    <Compile Include="MODULOS\ALMACEN.cs" />
+    <Compile Include="MODULOS\ALMACEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MODULOS\ALMACEN.Designer.cs">
       <DependentUpon>ALMACEN.cs</DependentUpon>
     </Compile>
@@ -78,7 +80,9 @@
     <Compile Include="MODULOS\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="MODULOS\GERENCIA.cs" />
+    <Compile Include="MODULOS\GERENCIA.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MODULOS\GERENCIA.Designer.cs">
       <DependentUpon>GERENCIA.cs</DependentUpon>
     </Compile>

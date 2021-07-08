@@ -26,5 +26,10 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
         {
 
         }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

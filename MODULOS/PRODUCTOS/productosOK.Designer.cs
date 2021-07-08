@@ -98,6 +98,10 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -161,10 +165,10 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Metropolis", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(450, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 24);
+            this.label1.Size = new System.Drawing.Size(131, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Productos";
             // 
@@ -264,7 +268,7 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.MenuStrip4.AutoSize = false;
             this.MenuStrip4.BackColor = System.Drawing.Color.White;
             this.MenuStrip4.Dock = System.Windows.Forms.DockStyle.None;
-            this.MenuStrip4.Font = new System.Drawing.Font("Metropolis Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MenuStrip4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MenuStrip4.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.MenuStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuItem15});
@@ -279,12 +283,12 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             // ToolStripMenuItem15
             // 
             this.ToolStripMenuItem15.BackColor = System.Drawing.Color.White;
-            this.ToolStripMenuItem15.Font = new System.Drawing.Font("Metropolis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToolStripMenuItem15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ToolStripMenuItem15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ToolStripMenuItem15.Image = ((System.Drawing.Image)(resources.GetObject("ToolStripMenuItem15.Image")));
             this.ToolStripMenuItem15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ToolStripMenuItem15.Name = "ToolStripMenuItem15";
-            this.ToolStripMenuItem15.Size = new System.Drawing.Size(213, 32);
+            this.ToolStripMenuItem15.Size = new System.Drawing.Size(222, 32);
             this.ToolStripMenuItem15.Text = "&Importar desde EXCEL";
             this.ToolStripMenuItem15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -351,42 +355,42 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             // lblcosto_inventario
             // 
             this.lblcosto_inventario.AutoSize = true;
-            this.lblcosto_inventario.Font = new System.Drawing.Font("Metropolis Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcosto_inventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcosto_inventario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(27)))), ((int)(((byte)(59)))));
             this.lblcosto_inventario.Location = new System.Drawing.Point(504, 16);
             this.lblcosto_inventario.Name = "lblcosto_inventario";
-            this.lblcosto_inventario.Size = new System.Drawing.Size(56, 19);
+            this.lblcosto_inventario.Size = new System.Drawing.Size(54, 24);
             this.lblcosto_inventario.TabIndex = 0;
             this.lblcosto_inventario.Text = "3456";
             // 
             // lblcantidad_productos
             // 
             this.lblcantidad_productos.AutoSize = true;
-            this.lblcantidad_productos.Font = new System.Drawing.Font("Metropolis Semi Bold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcantidad_productos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcantidad_productos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(27)))), ((int)(((byte)(59)))));
             this.lblcantidad_productos.Location = new System.Drawing.Point(201, 16);
             this.lblcantidad_productos.Name = "lblcantidad_productos";
-            this.lblcantidad_productos.Size = new System.Drawing.Size(56, 19);
+            this.lblcantidad_productos.Size = new System.Drawing.Size(54, 24);
             this.lblcantidad_productos.TabIndex = 0;
             this.lblcantidad_productos.Text = "3456";
             // 
             // Label50
             // 
             this.Label50.AutoSize = true;
-            this.Label50.Font = new System.Drawing.Font("Metropolis", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label50.Location = new System.Drawing.Point(298, 16);
             this.Label50.Name = "Label50";
-            this.Label50.Size = new System.Drawing.Size(200, 19);
+            this.Label50.Size = new System.Drawing.Size(196, 24);
             this.Label50.TabIndex = 0;
             this.Label50.Text = "Costo de Inventario:";
             // 
             // Label7
             // 
             this.Label7.AutoSize = true;
-            this.Label7.Font = new System.Drawing.Font("Metropolis", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label7.Location = new System.Drawing.Point(9, 16);
             this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(202, 19);
+            this.Label7.Size = new System.Drawing.Size(200, 24);
             this.Label7.TabIndex = 0;
             this.Label7.Text = "Cant. de Productos: ";
             // 
@@ -402,6 +406,10 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.label14);
+            this.panel8.Controls.Add(this.textBox10);
+            this.panel8.Controls.Add(this.textBox9);
+            this.panel8.Controls.Add(this.label13);
             this.panel8.Controls.Add(this.pictureBox7);
             this.panel8.Controls.Add(this.pictureBox6);
             this.panel8.Controls.Add(this.panel11);
@@ -434,7 +442,7 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(429, 428);
+            this.pictureBox7.Location = new System.Drawing.Point(429, 446);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(113, 62);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -445,7 +453,7 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(157, 428);
+            this.pictureBox6.Location = new System.Drawing.Point(157, 448);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(113, 60);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -459,7 +467,7 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.panel11.Controls.Add(this.label12);
             this.panel11.Controls.Add(this.label11);
             this.panel11.Controls.Add(this.label10);
-            this.panel11.Location = new System.Drawing.Point(27, 337);
+            this.panel11.Location = new System.Drawing.Point(27, 350);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(581, 125);
             this.panel11.TabIndex = 23;
@@ -476,10 +484,10 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.checkBox2.Location = new System.Drawing.Point(381, 81);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(116, 23);
+            this.checkBox2.Size = new System.Drawing.Size(117, 28);
             this.checkBox2.TabIndex = 3;
             this.checkBox2.Text = "No aplica";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -487,37 +495,37 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.label12.Location = new System.Drawing.Point(2, 83);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(214, 19);
+            this.label12.Size = new System.Drawing.Size(224, 24);
             this.label12.TabIndex = 2;
             this.label12.Text = "Fecha de vencimiento:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.label11.Location = new System.Drawing.Point(136, 44);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(80, 19);
+            this.label11.Size = new System.Drawing.Size(84, 24);
             this.label11.TabIndex = 1;
             this.label11.Text = "Minimo:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.label10.Location = new System.Drawing.Point(111, 12);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(107, 19);
+            this.label10.Size = new System.Drawing.Size(112, 24);
             this.label10.TabIndex = 0;
             this.label10.Text = "Existencia:";
             // 
             // panel10
             // 
             this.panel10.Controls.Add(this.checkBox1);
-            this.panel10.Location = new System.Drawing.Point(222, 299);
+            this.panel10.Location = new System.Drawing.Point(230, 339);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(211, 32);
             this.panel10.TabIndex = 22;
@@ -525,11 +533,11 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Metropolis Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.checkBox1.Location = new System.Drawing.Point(13, 10);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(173, 19);
+            this.checkBox1.Size = new System.Drawing.Size(176, 22);
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Controlar inventario";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -659,10 +667,10 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(54, 262);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(174, 19);
+            this.label9.Size = new System.Drawing.Size(177, 24);
             this.label9.TabIndex = 12;
             this.label9.Text = "Codigo de barras:";
             // 
@@ -676,10 +684,10 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(157, 231);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 19);
+            this.label8.Size = new System.Drawing.Size(74, 24);
             this.label8.TabIndex = 10;
             this.label8.Text = "Grupo:";
             // 
@@ -700,20 +708,20 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(69, 198);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(160, 19);
+            this.label6.Size = new System.Drawing.Size(163, 24);
             this.label6.TabIndex = 8;
             this.label6.Text = "Precio mayoreo:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(100, 162);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(129, 19);
+            this.label5.Size = new System.Drawing.Size(132, 24);
             this.label5.TabIndex = 8;
             this.label5.Text = "Precio venta:";
             // 
@@ -727,10 +735,10 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(108, 126);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(121, 19);
+            this.label4.Size = new System.Drawing.Size(126, 24);
             this.label4.TabIndex = 6;
             this.label4.Text = "% Ganancia:";
             // 
@@ -744,20 +752,20 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(165, 96);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 19);
+            this.label3.Size = new System.Drawing.Size(69, 24);
             this.label3.TabIndex = 4;
             this.label3.Text = "Costo:";
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Metropolis Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.Location = new System.Drawing.Point(410, 67);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(73, 19);
+            this.radioButton2.Size = new System.Drawing.Size(76, 22);
             this.radioButton2.TabIndex = 3;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Granel";
@@ -766,10 +774,10 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Metropolis Medium", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.Location = new System.Drawing.Point(236, 67);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(116, 19);
+            this.radioButton1.Size = new System.Drawing.Size(116, 22);
             this.radioButton1.TabIndex = 2;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Uidad/Pieza";
@@ -785,10 +793,10 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Metropolis Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(113, 39);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 19);
+            this.label2.Size = new System.Drawing.Size(127, 24);
             this.label2.TabIndex = 0;
             this.label2.Text = "Descripcion:";
             // 
@@ -799,17 +807,52 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(464, 260);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(164, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(169, 28);
             this.menuStrip1.TabIndex = 15;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // toolStripMenuItem1
             // 
-            this.toolStripMenuItem1.Font = new System.Drawing.Font("Metropolis Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem1.Image")));
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(156, 20);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(161, 24);
             this.toolStripMenuItem1.Text = "Generar codigo";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(75, 297);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(154, 24);
+            this.label13.TabIndex = 26;
+            this.label13.Text = "Codigo interno:";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(230, 298);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(174, 20);
+            this.textBox9.TabIndex = 27;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(598, 297);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(174, 20);
+            this.textBox10.TabIndex = 28;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(425, 293);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(170, 24);
+            this.label14.TabIndex = 29;
+            this.label14.Text = "Clave proveedor:";
             // 
             // productosOK
             // 
@@ -941,5 +984,9 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
         internal System.Windows.Forms.DateTimePicker txtfechaoka;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBox9;
     }
 }
