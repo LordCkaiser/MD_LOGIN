@@ -55,7 +55,15 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.Label50 = new System.Windows.Forms.Label();
             this.Label7 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.PANELREGISTRO = new System.Windows.Forms.Panel();
+            this.panelGRUPOSELEC = new System.Windows.Forms.Panel();
+            this.dataFamilia = new System.Windows.Forms.DataGridView();
+            this.borrar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -66,7 +74,6 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.label10 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel9 = new System.Windows.Forms.Panel();
             this.menuStrip7 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,13 +82,13 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip5 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnGuardarFamilia = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip3 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtFamilia = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -98,10 +105,7 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lblIdFamilia = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -116,12 +120,13 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
+            this.PANELREGISTRO.SuspendLayout();
+            this.panelGRUPOSELEC.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataFamilia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel9.SuspendLayout();
             this.menuStrip7.SuspendLayout();
             this.menuStrip6.SuspendLayout();
@@ -207,6 +212,7 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 539;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // Panel27
             // 
@@ -397,47 +403,114 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
-            this.panel7.Controls.Add(this.panel8);
+            this.panel7.Controls.Add(this.PANELREGISTRO);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(0, 87);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1271, 567);
             this.panel7.TabIndex = 4;
             // 
-            // panel8
+            // PANELREGISTRO
             // 
-            this.panel8.Controls.Add(this.label14);
-            this.panel8.Controls.Add(this.textBox10);
-            this.panel8.Controls.Add(this.textBox9);
-            this.panel8.Controls.Add(this.label13);
-            this.panel8.Controls.Add(this.pictureBox7);
-            this.panel8.Controls.Add(this.pictureBox6);
-            this.panel8.Controls.Add(this.panel11);
-            this.panel8.Controls.Add(this.panel10);
-            this.panel8.Controls.Add(this.dataGridView1);
-            this.panel8.Controls.Add(this.panel9);
-            this.panel8.Controls.Add(this.pictureBox5);
-            this.panel8.Controls.Add(this.textBox8);
-            this.panel8.Controls.Add(this.label9);
-            this.panel8.Controls.Add(this.textBox7);
-            this.panel8.Controls.Add(this.label8);
-            this.panel8.Controls.Add(this.textBox6);
-            this.panel8.Controls.Add(this.textBox5);
-            this.panel8.Controls.Add(this.label6);
-            this.panel8.Controls.Add(this.label5);
-            this.panel8.Controls.Add(this.textBox4);
-            this.panel8.Controls.Add(this.label4);
-            this.panel8.Controls.Add(this.textBox3);
-            this.panel8.Controls.Add(this.label3);
-            this.panel8.Controls.Add(this.radioButton2);
-            this.panel8.Controls.Add(this.radioButton1);
-            this.panel8.Controls.Add(this.textBox2);
-            this.panel8.Controls.Add(this.label2);
-            this.panel8.Controls.Add(this.menuStrip1);
-            this.panel8.Location = new System.Drawing.Point(25, 14);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1208, 511);
-            this.panel8.TabIndex = 0;
+            this.PANELREGISTRO.Controls.Add(this.lblIdFamilia);
+            this.PANELREGISTRO.Controls.Add(this.panelGRUPOSELEC);
+            this.PANELREGISTRO.Controls.Add(this.label14);
+            this.PANELREGISTRO.Controls.Add(this.textBox10);
+            this.PANELREGISTRO.Controls.Add(this.textBox9);
+            this.PANELREGISTRO.Controls.Add(this.label13);
+            this.PANELREGISTRO.Controls.Add(this.pictureBox7);
+            this.PANELREGISTRO.Controls.Add(this.pictureBox6);
+            this.PANELREGISTRO.Controls.Add(this.panel11);
+            this.PANELREGISTRO.Controls.Add(this.panel10);
+            this.PANELREGISTRO.Controls.Add(this.panel9);
+            this.PANELREGISTRO.Controls.Add(this.pictureBox5);
+            this.PANELREGISTRO.Controls.Add(this.textBox8);
+            this.PANELREGISTRO.Controls.Add(this.label9);
+            this.PANELREGISTRO.Controls.Add(this.txtFamilia);
+            this.PANELREGISTRO.Controls.Add(this.label8);
+            this.PANELREGISTRO.Controls.Add(this.textBox6);
+            this.PANELREGISTRO.Controls.Add(this.textBox5);
+            this.PANELREGISTRO.Controls.Add(this.label6);
+            this.PANELREGISTRO.Controls.Add(this.label5);
+            this.PANELREGISTRO.Controls.Add(this.textBox4);
+            this.PANELREGISTRO.Controls.Add(this.label4);
+            this.PANELREGISTRO.Controls.Add(this.textBox3);
+            this.PANELREGISTRO.Controls.Add(this.label3);
+            this.PANELREGISTRO.Controls.Add(this.radioButton2);
+            this.PANELREGISTRO.Controls.Add(this.radioButton1);
+            this.PANELREGISTRO.Controls.Add(this.textBox2);
+            this.PANELREGISTRO.Controls.Add(this.label2);
+            this.PANELREGISTRO.Controls.Add(this.menuStrip1);
+            this.PANELREGISTRO.Location = new System.Drawing.Point(25, 14);
+            this.PANELREGISTRO.Name = "PANELREGISTRO";
+            this.PANELREGISTRO.Size = new System.Drawing.Size(1208, 511);
+            this.PANELREGISTRO.TabIndex = 0;
+            // 
+            // panelGRUPOSELEC
+            // 
+            this.panelGRUPOSELEC.Controls.Add(this.dataFamilia);
+            this.panelGRUPOSELEC.Location = new System.Drawing.Point(134, 324);
+            this.panelGRUPOSELEC.Name = "panelGRUPOSELEC";
+            this.panelGRUPOSELEC.Size = new System.Drawing.Size(719, 203);
+            this.panelGRUPOSELEC.TabIndex = 30;
+            // 
+            // dataFamilia
+            // 
+            this.dataFamilia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataFamilia.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.borrar,
+            this.Column1});
+            this.dataFamilia.Location = new System.Drawing.Point(96, 12);
+            this.dataFamilia.Name = "dataFamilia";
+            this.dataFamilia.Size = new System.Drawing.Size(594, 153);
+            this.dataFamilia.TabIndex = 21;
+            // 
+            // borrar
+            // 
+            this.borrar.HeaderText = "";
+            this.borrar.Image = ((System.Drawing.Image)(resources.GetObject("borrar.Image")));
+            this.borrar.Name = "borrar";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "";
+            this.Column1.Image = ((System.Drawing.Image)(resources.GetObject("Column1.Image")));
+            this.Column1.Name = "Column1";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(425, 293);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(170, 24);
+            this.label14.TabIndex = 29;
+            this.label14.Text = "Clave proveedor:";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(598, 297);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(174, 20);
+            this.textBox10.TabIndex = 28;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(230, 298);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(174, 20);
+            this.textBox9.TabIndex = 27;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(75, 297);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(154, 24);
+            this.label13.TabIndex = 26;
+            this.label13.Text = "Codigo interno:";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // pictureBox7
             // 
@@ -467,7 +540,7 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.panel11.Controls.Add(this.label12);
             this.panel11.Controls.Add(this.label11);
             this.panel11.Controls.Add(this.label10);
-            this.panel11.Location = new System.Drawing.Point(27, 350);
+            this.panel11.Location = new System.Drawing.Point(38, 364);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(581, 125);
             this.panel11.TabIndex = 23;
@@ -542,14 +615,6 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.checkBox1.Text = "Controlar inventario";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(801, 309);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(263, 153);
-            this.dataGridView1.TabIndex = 21;
-            // 
             // panel9
             // 
             this.panel9.Controls.Add(this.menuStrip7);
@@ -617,18 +682,19 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             // 
             this.menuStrip5.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip5.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem4});
+            this.btnGuardarFamilia});
             this.menuStrip5.Location = new System.Drawing.Point(160, 5);
             this.menuStrip5.Name = "menuStrip5";
             this.menuStrip5.Size = new System.Drawing.Size(104, 24);
             this.menuStrip5.TabIndex = 17;
             this.menuStrip5.Text = "menuStrip3";
             // 
-            // toolStripMenuItem4
+            // btnGuardarFamilia
             // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(96, 20);
-            this.toolStripMenuItem4.Text = "Guardar grupo";
+            this.btnGuardarFamilia.Name = "btnGuardarFamilia";
+            this.btnGuardarFamilia.Size = new System.Drawing.Size(96, 20);
+            this.btnGuardarFamilia.Text = "Guardar grupo";
+            this.btnGuardarFamilia.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // menuStrip3
             // 
@@ -674,22 +740,23 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.label9.TabIndex = 12;
             this.label9.Text = "Codigo de barras:";
             // 
-            // textBox7
+            // txtFamilia
             // 
-            this.textBox7.Location = new System.Drawing.Point(235, 230);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(131, 20);
-            this.textBox7.TabIndex = 11;
+            this.txtFamilia.Location = new System.Drawing.Point(235, 230);
+            this.txtFamilia.Name = "txtFamilia";
+            this.txtFamilia.Size = new System.Drawing.Size(131, 20);
+            this.txtFamilia.TabIndex = 11;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(157, 231);
+            this.label8.Location = new System.Drawing.Point(150, 228);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(74, 24);
+            this.label8.Size = new System.Drawing.Size(83, 24);
             this.label8.TabIndex = 10;
-            this.label8.Text = "Grupo:";
+            this.label8.Text = "Familia:";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // textBox6
             // 
@@ -819,40 +886,14 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.toolStripMenuItem1.Size = new System.Drawing.Size(161, 24);
             this.toolStripMenuItem1.Text = "Generar codigo";
             // 
-            // label13
+            // lblIdFamilia
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(75, 297);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(154, 24);
-            this.label13.TabIndex = 26;
-            this.label13.Text = "Codigo interno:";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(230, 298);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(174, 20);
-            this.textBox9.TabIndex = 27;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(598, 297);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(174, 20);
-            this.textBox10.TabIndex = 28;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(425, 293);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(170, 24);
-            this.label14.TabIndex = 29;
-            this.label14.Text = "Clave proveedor:";
+            this.lblIdFamilia.AutoSize = true;
+            this.lblIdFamilia.Location = new System.Drawing.Point(73, 235);
+            this.lblIdFamilia.Name = "lblIdFamilia";
+            this.lblIdFamilia.Size = new System.Drawing.Size(41, 13);
+            this.lblIdFamilia.TabIndex = 31;
+            this.lblIdFamilia.Text = "label15";
             // 
             // productosOK
             // 
@@ -886,15 +927,16 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
+            this.PANELREGISTRO.ResumeLayout(false);
+            this.PANELREGISTRO.PerformLayout();
+            this.panelGRUPOSELEC.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataFamilia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.menuStrip7.ResumeLayout(false);
@@ -941,7 +983,7 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
         internal System.Windows.Forms.Label Label50;
         internal System.Windows.Forms.Label Label7;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel PANELREGISTRO;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -955,7 +997,7 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtFamilia;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label9;
@@ -968,12 +1010,12 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
         private System.Windows.Forms.MenuStrip menuStrip6;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
         private System.Windows.Forms.MenuStrip menuStrip5;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem btnGuardarFamilia;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.MenuStrip menuStrip7;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataFamilia;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Panel panel11;
@@ -988,5 +1030,9 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Panel panelGRUPOSELEC;
+        private System.Windows.Forms.DataGridViewImageColumn borrar;
+        private System.Windows.Forms.DataGridViewImageColumn Column1;
+        private System.Windows.Forms.Label lblIdFamilia;
     }
 }
