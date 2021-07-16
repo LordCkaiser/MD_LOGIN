@@ -21,7 +21,7 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
         private void productosOK_Load(object sender, EventArgs e)
         {
 
-            PANELREGISTRO.Visible = false;
+            panelGuardaCambiosProducto.Visible = false;
 
         }
 
@@ -37,7 +37,13 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            PANELREGISTRO.Visible = true;
+            panelGuardaCambiosProducto.Visible = true;
+            panelGRUPOSELEC.Visible = false;
+            btnGuardarCambios.Visible = false;
+            btnCancelar.Visible = false;
+            btnGuardarFamilia.Visible = false;
+
+
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -48,28 +54,7 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
         //boton guardarFamilia
         private void toolStripMenuItem4_Click(object sender, EventArgs e)
         {
-            try
-            {
-                SqlConnection con = new SqlConnection();
-                con.ConnectionString = CONEXION.CONEXIONMAESTRA.conexion;
-                con.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd = new SqlCommand("insertar_]Familia", con);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Codigo_familia", txtFamilia);
-                cmd.Parameters.AddWithValue("@Por_defecto", "NO");
-                cmd.ExecuteNonQuery();
-                con.Close();
-                mostrar_Familia();
-
-                lblIdFamilia.Text = dataFamilia.SelectedCells[2].Value.ToString();
-                txtFamilia.Text = dataFamilia.SelectedCells[2].Value.ToString();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
+            
         }
 
         private void mostrar_Familia ()
@@ -97,6 +82,76 @@ namespace MD_LOGIN.MODULOS.PRODUCTOS
                 MessageBox.Show(ex.Message);
             }
 }
-        
+
+        private void btnAgregarFamilia_Click(object sender, EventArgs e)
+        {
+            txtFamilia.Text = "Ingresa la nueva Familia";
+            txtFamilia.SelectAll();
+            txtFamilia.Focus();
+            btnAgregarFamilia.Visible = false;
+            btnGuardarCambios.Visible = false;
+            btnGuardarFamilia.Visible = true;
+            btnCancelar.Visible = true;
+
+        }
+
+        private void btnGuardarFamilia_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.conexion;
+                con.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd = new SqlCommand("insertar_]Familia", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Codigo_familia", txtFamilia);
+                cmd.Parameters.AddWithValue("@Por_defecto", "NO");
+                cmd.ExecuteNonQuery();
+                con.Close();
+                mostrar_Familia();
+
+                lblIdFamilia.Text = dataFamilia.SelectedCells[2].Value.ToString();
+                txtFamilia.Text = dataFamilia.SelectedCells[2].Value.ToString();
+
+                panelGRUPOSELEC.Visible = false;
+                btnGuardarCambios.Visible = false;
+                btnCancelar.Visible = false;
+                btnGuardarFamilia.Visible = false;
+                btnAgregarFamilia.Visible = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void txtFamilia_TextChanged(object sender, EventArgs e)
+        {
+            mostrar_Familia();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            panelGRUPOSELEC.Visible = false;
+            btnGuardarCambios.Visible = false;
+            btnCancelar.Visible = false;
+            btnGuardarFamilia.Visible = false;
+            btnAgregarFamilia.Visible = true;
+            mostrar_Familia();
+        }
+
+        private void btnAgregarFamilia_Click_1(object sender, EventArgs e)
+        {
+            txtFamilia.Text = "Ingresa la nueva Familia";
+            txtFamilia.SelectAll();
+            txtFamilia.Focus();
+            panelGRUPOSELEC.Visible = true;
+            btnAgregarFamilia.Visible = false;
+            btnGuardarCambios.Visible = false;
+            btnGuardarFamilia.Visible = true;
+            btnCancelar.Visible = true;
+        }
     }
 }
