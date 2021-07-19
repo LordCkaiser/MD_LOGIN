@@ -71,6 +71,7 @@ namespace MD_LOGIN.MODULOS
             this.Controls.Add(this.lblmensaje);
             this.Name = "Administrador";
             this.Text = "Administrador";
+            this.Load += new System.EventHandler(this.Administrador_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

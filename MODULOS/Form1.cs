@@ -8,7 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+
 using MD_LOGIN.MODULOS;
+
 
 namespace MD_LOGIN
 {
@@ -19,13 +21,14 @@ namespace MD_LOGIN
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection("Data source=25.79.95.49;Initial catalog=MDPV;user id = Admin; Password = *159753*");
-
         public void loguear(string usuario, string contra) {
 
             try
             {
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.conexion;
                 con.Open();
+              
                 SqlCommand cmd = new SqlCommand("select nombre,rol from USUARIOS where login =@login and password=@pass", con);
                 cmd.Parameters.AddWithValue("login", usuario);
                 cmd.Parameters.AddWithValue("pass", contra);
@@ -65,7 +68,7 @@ namespace MD_LOGIN
                 MessageBox.Show(e.Message);
             }
             finally {
-                con.Close();
+               // con.Close();
             
             }
         
